@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+	<dict>
+		<key>Label</key>
+		<string>me.alimy.excalidraw</string>
+		<key>ProgramArguments</key>
+		<array>
+			<!-- assumes Excalidraw is installed in /usr/local/bin -->
+			<!-- modify below to reflect your settings -->
+			<string>/usr/local/bin/excalidraw</string>
+		</array>
+		<key>RunAtLoad</key>
+		<true/>
+		<key>KeepAlive</key>
+		<true/>
+		<!-- modify below to reflect your settings -->
+		<key>WorkingDirectory</key>
+		<string>/tmp/excalidraw/</string>
+		<key>StandardOutPath</key>
+		<string>/tmp/excalidraw/log/stdout.log</string>
+		<key>StandardErrorPath</key>
+		<string>/tmp/excalidraw/log/stderr.log</string>
+	</dict>
+</plist>

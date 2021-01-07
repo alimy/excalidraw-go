@@ -1,0 +1,10 @@
+[Unit]
+Description=Excalidraw
+
+[Service]
+Type=simple
+ExecStart=/usr/local/bin/excalidraw
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
