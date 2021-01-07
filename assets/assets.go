@@ -12,5 +12,5 @@ func NewFileSystem() http.FileSystem {
 	//go:embed dist
 	var content embed.FS
 
-	return embedx.NewFileSystem(&content, embedx.ChangeRootOpt("dist"))
+	return embedx.NewFileSystem(&content, embedx.ChangeRoot("dist"))
 }
