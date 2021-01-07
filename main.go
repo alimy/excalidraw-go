@@ -28,7 +28,9 @@ func main() {
 
 	if showVersion {
 		fmt.Println(version)
+		return
 	}
+
 	addr := fmt.Sprintf("%s:%d", host, port)
 	if host == "" {
 		host = "localhost"
