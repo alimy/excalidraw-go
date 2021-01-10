@@ -1,5 +1,8 @@
 ## Excalidraw-go
-Excalidraw-go used to wrap [Excalidraw](https://github.com/excalidraw/excalidraw) in a go http server to run as a single standlong execute binary application.
+Excalidraw-go used to wrap [Excalidraw](https://github.com/excalidraw/excalidraw) in a go http server to run as a single standlong execute binary application.  
+
+[![](https://github.com/excalidraw/excalidraw/blob/master/public/og-image.png)](https://excalidraw.com/)
+
 
 #### Usage
 ```bash
