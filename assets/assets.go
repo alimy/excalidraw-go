@@ -6,9 +6,9 @@ package assets
 
 import (
 	"embed"
+	"io/fs"
+	"log"
 	"net/http"
-
-	"github.com/alimy/embedx"
 )
 
 //go:embed dist
@@ -16,6 +16,9 @@ var content embed.FS
 
 // NewFileSystem get a http.FileSystem instance that contain excalidraw release resource.
 func NewFileSystem() http.FileSystem {
-	embedFS := embedx.ChangeRoot(content, "dist")
+	embedFS, err := fs.Sub(content, "dist")
+	if err != nil {
+		log.Fatal(err)
+	}
 	return http.FS(embedFS)
 }
