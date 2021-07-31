@@ -18,7 +18,8 @@ var (
 	port        uint
 	showVersion bool
 
-	version = "v0.1.0"
+	appVer = "v0.1.0"
+	excalidrawVer = "v0.9.0-8-g4df401d0"
 )
 
 func init() {
@@ -31,7 +32,7 @@ func main() {
 	flag.Parse()
 
 	if showVersion {
-		fmt.Println(version)
+		fmt.Printf("%s excalidraw-%s\n", appVer, excalidrawVer)
 		return
 	}
 
