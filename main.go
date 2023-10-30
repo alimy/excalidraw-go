@@ -18,8 +18,8 @@ var (
 	port        uint
 	showVersion bool
 
-	appVer = "v0.1.0"
-	excalidrawVer = "v0.9.0-8-g4df401d0"
+	appVer = "v0.16.1"
+	excalidrawVer = "v0.16.1-51-gea677d45"
 )
 
 func init() {
